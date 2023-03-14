@@ -358,7 +358,7 @@ h1 span {
 }
 @media(max-width: 767px) {
   .search-item{
-    left: 0;
+    left: 10px;
   }
 }
 .search-item.active{
