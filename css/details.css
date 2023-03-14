@@ -1,0 +1,193 @@
+/* body */
+body{
+  background-color: #f9f9f9;
+}
+/* global rules for products */
+.my-product .details h2{
+  font-size: 26px;
+  font-family: "Great Vibes";
+  color: var(--purple-color);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.my-product .details span.price{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blue-color);
+}
+.my-product .details button{
+  width: 220px;
+  min-width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  transition: .5s;
+}
+.my-product .details button:hover{
+  opacity: .9;
+}
+/* create my product */
+
+.single-product .my-product{
+  max-width: 750px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 20px;
+  padding: 20px;
+}
+@media(max-width: 400px){
+  .single-product .my-product{
+    margin: 0;
+    padding: 0;
+  }
+}
+.single-product .my-product .img{
+  width: 300px;
+  min-width: 250px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin: auto;
+}
+.single-product .my-product .img img{
+  width: 250px;
+}
+.single-product .my-product .details{
+  width: 300px;
+  min-width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 10px;
+  margin: auto;
+}
+@media(max-width: 400px){
+  .single-product .my-product .details{
+    padding: 10px;
+  }
+}
+.single-product .my-product .details .shop-nums{
+  display: flex;
+  margin-bottom: 10px;
+}
+.single-product h2, .single-product .price, .single-product .shop-nums{
+  margin-left: 10px;
+}
+.shop-nums i,
+.shop-nums div {
+  border: 1px solid #ccc;
+  height: 40px;
+  width: 40px;
+  padding: 15px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+.shopping-cart .shop-nums i,
+.shopping-cart .shop-nums div{
+  border-color: #eee;
+}
+.my-product .details .buy-product{
+  background-color: var(--blue-color);
+}
+.my-product .details .buy-product:hover{
+  color:var(--blue-color);
+  background-color: #fff;
+  border: 2px solid var(--blue-color);
+  font-weight: 500;
+}
+.single-product .description{
+  max-width: 95%;
+  background-color: #f6f6f6;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 0 2px #ccc;
+  color: #666;
+}
+.description h3{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Laila', sans-serif;
+  color: var(--purple-color);
+}
+/* related-products */
+.related-item{
+  margin: 30px 0;
+}
+.related-item .title {
+  position: relative;
+  padding: 10px 30px;
+  margin: 40px 20px;
+  display: none;
+}
+.related-item .title::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: var(--purple-color);
+}
+.related-item .title h2{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.related-item .title h4{
+  font-family: 'Laila', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #444;  
+}
+
+.related-products{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 50px;
+}
+.related-products .related-popular{
+  width: 220px;
+  height: 300px;
+  box-shadow: 0 1px 3px #ccc;
+  position: relative;
+}
+.related-products .related-popular .img{
+  height: 210px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.related-products .related-popular .img img{
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+  background-size: cover;
+}
+.related-products .related-popular .contain-popular{
+  text-align: center;
+  margin: 15px 0;
+}
+.related-products .related-popular .contain-popular h3{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--main-color);
+  font-family: "Great Vibes";
+  }
+.related-products .related-popular .contain-popular .price span{
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--blue-color);
+}

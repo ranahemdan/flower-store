@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Flowers Store</title>
+</head>
+<body>
+<!-- loader -->
+  <section class="loader-section">
+    <div class="loader">
+      <img src="image/flowerLoading.gif" alt="">
+    </div>
+  </section>
+  <!-- start btn scroll up -->
+  <a class="scroll-up" onclick="btnUp()"><i class="fas fa-angle-up"></i></a>
+      <!-- popup -->
+  <div class="popup pop-product">This product is already in the cart</div>
+  <div class="popup quantity">This quantity is not available</div>
+  <header>
+    <!--nav1 with title-->
+    <nav class="nav1">
+      <div class="container">
+        <h1 class="upper-case"><a href="index.html"><span>fl</span>owers</a></h1>
+        <!--main icons-->
+        <div class="icons">
+          <form>
+            <input id="main-search" type="text" onkeyup="searchMainProducts()" placeholder="search product...."/>
+            <a class="btn-search"><i class="fas fa-search"></i></a> 
+            <!-- main result search -->
+            <div class="home-search">
+              <div class="search-item" id="search-shop">
+                <div class="title-search">products</div>
+                <div class="number-of-items"></div>
+                <div class="shopping-search" id="product-search"></div>
+                <div class="no-result"> No Results Found ! </div>
+              </div>
+            </div>
+          </form>
+          <a class="icon-help icon">
+            <i class="fas fa-question-circle"></i>
+            <span>help</span>
+          </a> 
+          <a class="icon-account icon" href="account.html">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+          </a>
+          <a class="icon-cart icon">
+            <cart class="nums-cart">0</cart>
+            <i class="fas fa-shopping-cart"></i>
+            <span>cart</span>
+          </a> 
+        </div> 
+      </div>
+    </nav>
+    <hr/>  
+    <!--nav2 with menu-->
+    <nav class="nav2">
+      <div class="container">
+        <ul class="navigation upper-case">
+          <li><a id="main" class="item active"  href="index.html"> <i class="fas fa-home"></i> home</a></li>
+          <li class="shop">
+            <a id="store" class="item" href="shop.html" onclick="deleteBirthData()">
+              <i class="fas fa-shopping-cart"></i>
+            shop
+            <i class="fas fa-caret-down"></i>
+            <i class="fas fa-caret-right"></i>
+              <div class="contain">
+              <h3><a href="shop.html" onclick="deleteBirthData()"> flowers</a></h3>
+              <h3><a href="plants.html">plants</a></h3>
+            </div>
+            </a>
+          </li>
+          <li><a id="company" class="item" href="aboutUs.html"><i class="fas fa-globe"></i> our company</a></li>
+        </ul>
+        <p class="call">call support (+800)888 000 555</p>
+        <!-- menu-btn -->
+        <div class="menu-btn" onclick='toggle()'>
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>  
+    </nav> 
+  </header>  
+
+  <!-- cart -->
+<div class="home-cart">
+  <div class="cart" id="cart-shop">
+    <i class="fas fa-times close"></i>
+    <div class="shopping-cart" id="product-cart"></div>
+    <div class="total-price">
+      <p class="total">Total</p>
+      <span class="price-amount">00.00</span>
+    </div>
+    <div class="check-view">
+      <button class="view" onclick="moveToViewCart()">view cart <i class="fas fa-shopping-bag"></i></button>
+      <button class="check" onclick="moveToAccount()">checkout <i class="fas fa-money-check-alt"></i></button>
+    </div>
+    <div class="label" id="label"></div>
+  </div>
+</div>
+  <!-- start slider -->
+  <div class="slider" id="home">
+    <!-- the radio -->
+    <div class="slids">   
+      <input type="radio" id="rad1" class="slide" name="btnRadio" value="radio1"/>
+      <input type="radio" id="rad2" class="slide" name="btnRadio" value="radio2"/>
+      <input type="radio" id="rad3" class="slide" name="btnRadio" value="radio3"/>
+      <!--start slid images with text-->
+      <div class="slid first">
+        <img src="image/back/7bc.jpg" alt="">
+        <div class="text">
+          <h2 class="h-one capitalize">big sale</h2>
+          <p class="p1">discount <span>20% off</span> for flowers members</p>
+        </div>  
+      </div>
+      <div class="slid">
+        <img src="image/back/5bc.jpg" alt="">
+        <div class="text">
+          <h2 class="h-one capitalize">Anniversary</h2>
+          <p class="p1">Anniversary flowers & gifts from <span>$44.99</span> for flowers members</p>
+        </div>  
+      </div>
+      <div class="slid">
+        <img class="three" src="image/back/3bc.jpg" alt="">
+        <div class="text">
+          <h2 class="h-two capitalize">spring tulips</h2>
+          <p class="p2">half price from <span>$34.99</span> for flowers members</p>
+        </div>  
+      </div>
+      <div class="slid">
+        <img src="image/back/9bc.jpg" alt="">
+        <div class="text">
+          <h2 class="h-three capitalize">roses & wine</h2>
+          <p class="p3">speciales half price from <span>$24.99</span> for flowers members</p>
+        </div>
+      </div>
+      <!--start navigation auto-->
+      <div class="navigationAuto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+      <!--start navigation manual-->
+      <div class="for">
+        <label for="rad1" class="btn"></label>
+        <label for="rad2" class="btn"></label>
+        <label for="rad3" class="btn"></label>
+      </div>  
+    </div>      
+    <button class="shop upper-case transition" onclick="deleteBirthData(), moveToShop()">shop now</button>
+</div>
+  <!--start the fatures-->
+  <section class="features ground-section"> 
+    <h2 class="main-title upper-case head heading">features</h2>
+    <div class="container">
+      <section>
+        <h3 class="capitalize">Free Delivery</h3>
+        <p>Free shipping around Egypt for all
+        orders over $120. </p>
+      </section>
+      <section>
+        <h3 class="capitalize">Safe Payment</h3>
+        <p>With our payment gateway, don’t worry
+        about your information. </p>
+      </section>
+      <section>
+        <h3 class="capitalize">Friendly Services</h3>
+        <P>You have 30-day return guarantee for
+        every single order. </p>
+      </section>
+    </div>  
+  </section> 
+<!-- the main shopping-->
+<section class="shopping ground-section">
+  <i class="fas fa-chevron-left"></i>
+  <i class="fas fa-chevron-right"></i>
+  <div class="shopping-contain">
+    <h2 class="main-title head heading upper-case">Our Favorites</h2>
+    <div class="shop-items transition" id="shop">
+      
+    </div>
+  </div>  
+</section>  
+
+<!-- monthly product -->
+<section class="month">
+  <div class="container">
+    <div class="content text-center">
+      <h2 class="upper-case">Blooming by Birth Month</h2>
+      <p>Blooming by Birth Month</p>
+      <a  class="birth-btn upper-case transition" onclick="moveBirthFlower()">shop birthday flowers</a>
+    </div>
+  </div>
+</section>
+<!-- new products -->
+<section class="new-shop">
+  <h2 class="main-title upper-case">bouquets</h2>
+  <div class="container">
+
+  </div>  
+</section>
+  <!--the services-->
+  <section class="services ground-section">
+    <div class="container">
+      <div class="pic"><img src="image/services.png" alt=""></div>
+      <div class="serv text-center">
+        <h2 class='main-title head heading capitalize'>our services</h2>
+        <h3>What We Do</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Quam, obcaecati tempora? Cupiditate quasi reprehenderit incidunt ipsa dolorem
+          atque consequuntur officia soluta praesentium quidem rem nam eligendi,
+          fugit cumque perferendis provident.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec quam felis, ultricies nec...
+        </p>
+        <button class="btn-services genral-btn" onclick = "moveToCompany()">read more</button>
+      </div>
+    </div>  
+  </section>
+  <!-- our collection -->
+  <section class="collection">
+      <h2 class="main-title head heading upper-case">Our Collection</h2>
+      <div class="content text-center">
+        <div class="img" onclick="moveToShop()" onclick="deleteBirthData()">
+          <div class="hover-collection">
+            <h4 class="upper-case">flowers</h4>
+          </div>
+          <img src="image/back/roses.jpg" alt="picture"/>
+        </div>
+        <div class="img" onclick="moveToPlants()">
+          <div class="hover-collection">
+            <h4 class="upper-case">plants</h4>
+          </div>
+          <img src="image/back/plants.jpg" alt="picture"/>
+        </div>
+      </div>
+  </section>
+
+  <!-- the footer -->
+  <footer class="capitalize">
+    <div class="container">
+      <div class="payment">
+        <h1 class="upper-case"><a href="index.html"><span>fl</span>owers</a></h1>
+        <div class="lock"><i class="fas fa-lock"></i>  %100 secureshoping</div>
+        <div class="pay">
+          <h2>payment options</h2>
+          <a href="#"><i class="fab fa-cc-visa"></i></a>
+          <a href="#"><i class="fab fa-cc-paypal"></i></a>
+          <a href="#"><i class="fab fa-cc-mastercard"></i></i></a>
+          <a href="#"><i class="fab fa-cc-discover"></i></a>
+        </div>
+      </div>
+      <div class="details">
+        <div>
+          <h2>about</h2>
+          <p><a href="#">story</a></p>
+          <p><a href="#">our history</a></p>
+          <p><a href="#">careers</a></p>
+          <p><a href="#">press enquiries</a></p>
+          <p><a href="#">blog</a></p>
+        </div>
+        <div>
+          <h2>help</h2>
+          <p><a href="#">order tracking</a></p>
+          <p><a href="#">help</a></p>
+          <p><a href="#">delivary pass</a></p>
+          <p><a href="#">gift cards</a></p>
+          <p><a href="#">privacy setting</a></p>
+        </div>
+        <div>
+          <h2>services</h2>
+          <p><a href="#">find a local florist</a></p>
+          <p><a href="#">florist membership</a></p>
+          <p><a href="#">corporae orders</a></p>
+          <p><a href="#">best flower delivery</a></p>
+          <p><a href="#">site map</a></p>
+        </div>
+        <div>
+          <h2>legal</h2>
+          <p><a href="#">terms and conditions</a></p>
+          <p><a href="#">security policy</a></p>
+          <p><a href="#">privacy policy</a></p>
+          <p><a href="#">cookies</a></p>
+          <p><a href="#">privacy setting</a></p>
+        </div>
+        <div>
+          <h2>most popular location</h2>
+          <p><a href="#">cairo</a></p>
+          <p><a href="#">alex</a></p>
+          <p><a href="#">mansoura</a></p>
+          <p><a href="#">portsaid</a></p>
+          <p><a href="#">other location</a></p>
+        </div>
+        <div class="contact" id="contact">
+          <h2>contact us</h2>
+          <p>we're here for you 24 hours a day, 7 days a week.</p>
+          <p><a href="#"><i class="fas fa-map-marker-alt"></i> track order</a></p>
+          <p><a href="#"><i class="fas fa-mobile-alt"></i> (+800)888 000 555</a></p>
+          <p><a href="#"><i class="far fa-comment-dots"></i> click to chat</a></p>
+        </div>
+      </div>    
+      <div class="sub-social">
+        <div>
+          <h2>subscribe for email offers</h2>
+          <form action="" method="POST">
+            <input type="email" name="email" placeholder="email@examble.com">
+            <input class="upper-case" type="submit" value="sign up">
+          </form>
+        </div> 
+        <div class="social">
+          <a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" title="printerest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div> 
+    </div>   
+    <div class="copy-right">
+      <p>copyright &copy; <span class="creating-year"></span> <span>nesren hemdan</span>. all right reserved.</p>
+    </div>
+  </footer>
+</body>  
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</html>

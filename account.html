@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/account.css">
+  <title>Account</title>
+</head>
+<body>
+    <!-- loader -->
+  <section class="loader-section">
+    <div class="loader">
+      <img src="image/flowerLoading.gif" alt="">
+    </div>
+  </section>
+  <!-- header -->
+  <header>
+    <nav class="nav1">
+      <div class="container">
+        <h1 class="upper-case"><a href="index.html"><span>fl</span>owers</a></h1>
+      </div>
+    </nav>
+  </header>
+  <!-- contain account -->
+  <div class="contain-account">
+    <div class="back-account"></div>
+    <section>
+        <!-- login -->
+        <div class="contain-form login">
+          <div class="back-form">
+            <div class="title">
+              <h2>login</h2>
+            </div>
+            <form id="login" action="" method="post">
+              <div class="input-cont">
+                <div class="contain">
+                  <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="login-email" class="login-e" placeholder="Enter your email"/>
+                  </div>
+                  <small></small>
+                </div>
+                <div class="contain">
+                  <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="login-pass" class="password" placeholder="Enter your password"/>
+                    <i class="fas fa-eye-slash"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <small></small>
+                </div>
+              </div>
+              <div class="contain">
+                <div class="remember-me">
+                    <input type="checkbox" name="remember" id="check-login"/>
+                    <label for="check-login">remember me</label>
+                  <div class="forget"><a href="">forgot password</a></div>
+                </div>
+              </div>
+              <button id="login-btn" class="submit-login">login</button>
+              <div class="signup-enter">
+                <span>not a member? <a id="sign" onclick="toggleAccount()">signup now</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- sign -->
+        <div class="contain-form sign">
+          <div class="back-form">
+            <div class="title">
+              <h2>Registration</h2>
+            </div>
+            <form id="signup" action="" method="post">
+              <div class="input-cont">
+                <div class="contain">
+                  <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="sign-user" class="user" placeholder="Username" />
+                  </div>
+                  <small></small>
+                </div>
+                <div class="contain">
+                  <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="sign-email" class="sign-e" placeholder="Email" />
+                  </div>
+                  <small></small>
+                </div>
+                <div class="contain">
+                  <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="sign-pass" class="password" placeholder="Enter your password" />
+                    <i class="fas fa-eye-slash"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <small></small>
+                </div>
+                <div class="contain">
+                  <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirm-pass" class="password" placeholder="Confirm a password" />
+                    <i class="fas fa-eye-slash"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <small></small>
+                </div>
+                <div class="contain">
+                  <div class="input-field">
+                    <select name="city" id="select-city" class="sel-city">
+                      <option disabled="" selected="" value="" class="disabled">Select a city</option>
+                    </select>                   
+                  </div>
+                  <small></small>
+                </div>
+                <div class="contain">
+                  <div class="input-field">
+                    <select name="gender" id="select-gender" class="sel-gender">
+                      <option disabled="" selected="" value="" class="disabled">Select a gender</option>                   
+                    </select>
+                  </div>
+                  <small></small>
+                </div>
+              </div>
+              <button class="submit-sign">signup</button>
+              <div class="login-enter">
+                <span>already a member? <a id="login" onclick="toggleAccount()">login now</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+    </section>
+  </div>
+  <script src="js/account.js"></script>
+</body>
+</html>

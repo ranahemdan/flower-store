@@ -1,0 +1,210 @@
+.contain-account{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+.contain-account .back-account{
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/back/back2A.jpg);
+  background-size: cover;
+  background-color: antiquewhite;
+  object-fit: cover;
+}
+@media(max-width: 991px){
+  .contain-account .back-account{
+    background-image: url(../image/back/back.jpg);
+    background-position: right top;
+  }
+}
+/* form login */
+.contain-account .contain-form{
+  position: absolute;
+  top: 80px;
+  right: 10%;
+  max-width: 550px;
+  min-width: 280px;
+  width: 100%;
+  padding: 5px;
+  margin-left: 40%;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.contain-account .contain-form.login.hide{
+  right: 200%;
+}
+.contain-account .contain-form.sign{
+  right: -200%;
+}
+.contain-account .contain-form.sign.active{
+  right: 10%;
+}
+
+@media(max-width: 991px){
+  .contain-account .contain-form{
+    right: 50%;
+    transform: translate(50%);
+  }
+  .contain-account .contain-form.sign.active{
+    right: 50%;
+    transform: translate(50%);  }
+}
+.contain-account .contain-form .back-form{
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: rgb(250 255 255 / 70%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color:#444;
+  text-transform: capitalize;
+}
+@media(max-width: 401px){
+  .contain-account .contain-form .back-form{
+    padding: 10px;
+  }
+}
+.contain-account .contain-form a{
+  color: #7d59c5;
+}
+
+.contain-account .contain-form .title h2{
+  font-size: 20px;
+}
+.contain-account .contain-form .title::after{
+  content: "";
+  width: 40px;
+  height: 2px;
+  display: block;
+  background-color: var(--main-color);
+}
+.contain-account .contain-form .input-cont{
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contain-account .contain-form .input-cont .input-field{
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 2px #999;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  position: relative;
+}
+.contain-account .contain-form .input-cont .input-field i{
+  position: absolute;
+  top: 12px;
+  font-size: 18px;
+  color: #777;
+}
+i.fa-eye-slash, i.fa-eye{
+  right: 10px;
+  cursor: pointer;
+}
+
+i.fa-eye-slash.hide{
+  opacity: 0;
+}
+i.fa-eye{
+  opacity: 0;
+}
+i.fa-eye.show{
+  opacity: 1;
+}
+.contain-account .contain-form .input-cont input{
+  width: calc(100% - 20px);
+  outline: none;
+  background-color: transparent;
+  margin-left: 22px;
+}
+.contain-account .contain-form .contain.false .input-field{
+  border: 2px solid #e74c3c;
+  box-shadow: none;
+}
+.contain-account .contain-form .contain.true .input-field{
+  border: 2px solid #2ecc71;
+  box-shadow: none;
+}
+.contain-account .contain-form small{
+  display: none;
+  font-size: 12px;
+  text-transform: none;
+}
+.contain-account .contain-form .contain.false small{
+  color: #e74c3c;
+  display: block;
+  margin: 5px;
+}
+.contain-account .contain-form .remember-me{
+  display: flex;
+  margin-top: 30px;
+  position: relative;
+}
+.contain-account .contain-form .remember-me .forget{
+  position: absolute;
+  right: 5px;
+}
+.contain-account .contain-form .remember-me input{
+  accent-color: var(--blue-color);
+  margin-right: 5px;
+}
+.input-field select{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+}
+.input-field select option{
+  color: #333;
+}
+.input-field select option.disabled{
+  background-color: #b5b2b5;
+  color: #eee;
+}
+.contain-account .contain-form button{
+  width: 100%;
+  padding: 10px;
+  background-color: var(--main-color);
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 30px 0;
+  border-radius: 5px;
+  transition: .5s;
+  -webkit-transition: .5s;
+}
+.contain-account .contain-form button:hover{
+  opacity: .9;
+}
+@media(max-width: 401px){
+  .contain-account .contain-form button{
+    margin: 10px auto;
+    font-size: 16px;
+  }
+}
+.contain-form .signup-enter{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contain-form .login-enter{
+  text-align: center;
+  margin-bottom: 0;
+}
+@media(max-width: 401px){
+  .contain-form .login-enter{
+    margin-bottom: 10px;
+  }
+}
+.contain-form .signup-enter a, .contain-form .login-enter a{
+  margin-left: 10px;
+}
+
+
+

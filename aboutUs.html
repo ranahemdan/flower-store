@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
+  <title>Flowers Store</title>
+</head>
+<body>
+    <!-- loader -->
+  <section class="loader-section">
+    <div class="loader">
+      <img src="image/flowerLoading.gif" alt="">
+    </div>
+  </section>
+  <!-- header -->
+  <header>
+    <!--nav1 with title-->
+    <nav class="nav1">
+      <div class="container">
+        <h1 class="upper-case"><a href="index.html"><span>fl</span>owers</a></h1>
+      </div>
+    </nav>
+    <hr/>  
+    <!--nav2 with menu-->
+    <nav class="nav2">
+      <div class="container">
+        <ul class="navigation upper-case">
+          <li><a id="main" class="item active"  href="index.html"> <i class="fas fa-home"></i> home</a></li>
+          <li class="shop">
+            <a id="store" class="item" href="shop.html" onclick="deleteBirthData()">
+              <i class="fas fa-shopping-cart"></i>
+            shop
+            <i class="fas fa-caret-down"></i>
+            <i class="fas fa-caret-right"></i>
+              <div class="contain">
+                <h3><a href="shop.html" onclick="deleteBirthData()"> flowers</a></h3>
+                <h3><a href="plants.html">plants</a></h3>
+            </div>
+            </a>
+          </li>         
+          <li><a id="company" class="item" href="aboutUs.html"><i class="fas fa-globe"></i> our company</a></li>
+        </ul>
+        <p class="call">call support (+800)888 000 555</p>
+        <!-- menu-btn -->
+        <div class="menu-btn" onclick='toggle()'>
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>  
+    </nav> 
+  </header>
+  <!-- image for title -->
+  <div class="about-us">
+    <h2>about us</h2>
+  </div>
+  <!-- section about our company aim -->
+  <section class="our-aim">
+    <h2 class="title">Our aim at Flowers is to plant happiness in your daily life !</h2>
+    <p>
+      As a family business,
+      we have prospered on the values that raised us: excellence, 
+      perseverance, generosity, integrity, team unity
+    </p>
+    <h2 class="services">our services</h2>
+    <p>
+      We specialize in multiple services including outdoor landscaping, 
+      weekly floral contracts.
+      Numerous businesses across the region from airports to governmental organizations  
+      and high-end hotels  have showcased our designs, as our ability to transform 
+      spaces has been mastered through many years of experience.
+    </p>
+  </section>
+  <!-- history -->
+  <section class="history">
+    <h2 class="title">our history</h2>
+    <div class="contain">
+      <p>
+        <span>2010</span>
+        Opening of Ashrooq showroom and mansours
+      </p>
+      <div class="img">     
+        <img src="image/services/1sh.jpg" alt="img-showroom">
+      </div>
+    </div>
+    <div class="contain">
+      <p>
+        <span>2012</span>
+        Opening of Kasoleek showroom
+      </p>
+      <div class="img">
+        <img src="image/services/2sh.jpg" alt="img-showroom">
+      </div>
+    </div>
+    <div class="contain">
+      <p>
+        <span>2016</span>
+        Opening of sandra showroom 
+        </p>
+        <div class="img">
+          <img src="image/services/3sh.jpg" alt="img-showroom">
+        </div>
+    </div>
+    </section>
+  <!-- services -->
+  <section class="service">
+    <div class="contain">
+      <div>
+        <h3>        
+          <span><i class="fas fa-heart"></i></span>
+          EXPERT SERVICE
+        </h3>
+        <p>Online business since 2017</p>
+      </div>
+    </div>
+    <div class="contain">
+      <div>
+        <h3>
+          <span><i class="fas fa-clock"></i></span>
+          SAME DAY DELIVERY AVAILABLE
+        </h3>
+        <p>Door to door delivery across Egypt</p>
+      </div>
+    </div>
+    <div class="contain">
+      <div>
+        <h3>
+          <span><i class="fas fa-comment"></i></span>
+          EXTRA CARE
+        </h3>
+        <p>Live chat support Sat to Thu</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- the footer -->
+  <footer class="capitalize">
+    <div class="container">
+      <div class="payment">
+        <h1 class="upper-case"><a href="index.html"><span>fl</span>owers</a></h1>
+        <div class="lock"><i class="fas fa-lock"></i>  %100 secureshoping</div>
+        <div class="pay">
+          <h2>payment options</h2>
+          <a href="#"><i class="fab fa-cc-visa"></i></a>
+          <a href="#"><i class="fab fa-cc-paypal"></i></a>
+          <a href="#"><i class="fab fa-cc-mastercard"></i></i></a>
+          <a href="#"><i class="fab fa-cc-discover"></i></a>
+        </div>
+      </div>
+      <div class="details">
+        <div>
+          <h2>about</h2>
+          <p><a href="#">story</a></p>
+          <p><a href="#">our history</a></p>
+          <p><a href="#">careers</a></p>
+          <p><a href="#">press enquiries</a></p>
+          <p><a href="#">blog</a></p>
+        </div>
+        <div>
+          <h2>help</h2>
+          <p><a href="#">order tracking</a></p>
+          <p><a href="#">help</a></p>
+          <p><a href="#">delivary pass</a></p>
+          <p><a href="#">gift cards</a></p>
+          <p><a href="#">privacy setting</a></p>
+        </div>
+        <div>
+          <h2>services</h2>
+          <p><a href="#">find a local florist</a></p>
+          <p><a href="#">florist membership</a></p>
+          <p><a href="#">corporae orders</a></p>
+          <p><a href="#">best flower delivery</a></p>
+          <p><a href="#">site map</a></p>
+        </div>
+        <div>
+          <h2>legal</h2>
+          <p><a href="#">terms and conditions</a></p>
+          <p><a href="#">security policy</a></p>
+          <p><a href="#">privacy policy</a></p>
+          <p><a href="#">cookies</a></p>
+          <p><a href="#">privacy setting</a></p>
+        </div>
+        <div>
+          <h2>most popular location</h2>
+          <p><a href="#">cairo</a></p>
+          <p><a href="#">alex</a></p>
+          <p><a href="#">mansoura</a></p>
+          <p><a href="#">portsaid</a></p>
+          <p><a href="#">other location</a></p>
+        </div>
+        <div class="contact" id="contact">
+          <h2>contact us</h2>
+          <p>we're here for you 24 hours a day, 7 days a week.</p>
+          <p><a href="#"><i class="fas fa-map-marker-alt"></i> track order</a></p>
+          <p><a href="#"><i class="fas fa-mobile-alt"></i> (+800)888 000 555</a></p>
+          <p><a href="#"><i class="far fa-comment-dots"></i> click to chat</a></p>
+        </div>
+      </div>    
+      <div class="sub-social">
+        <div>
+          <h2>subscribe for email offers</h2>
+          <form action="" method="POST">
+            <input type="email" name="email" placeholder="email@examble.com">
+            <input class="upper-case" type="submit" value="sign up">
+          </form>
+        </div> 
+        <div class="social">
+          <a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" title="printerest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div> 
+    </div>   
+    <div class="copy-right">
+      <p>copyright &copy; <span class="creating-year"></span> <span>nesren hemdan</span>. all right reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="js/about.js"></script>
+</html>
