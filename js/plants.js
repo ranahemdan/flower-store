@@ -70,7 +70,6 @@ let searchProducts = () => {
     let noResult = document.querySelector(".search .no-result");
     let result = plantsData.filter((i) => (i.name.toUpperCase()).includes(searchBox))
     // ////hide and show result message 
-    console.log(noResult);
     if (result.length === 0) {
       noResult.classList.remove('hide');
       noResult.classList.add('show');
