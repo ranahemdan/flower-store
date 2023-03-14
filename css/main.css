@@ -356,6 +356,11 @@ h1 span {
   -webkit-transition: 1s;
   z-index: 111111111;
 }
+@media(max-width: 767px) {
+  .search-item{
+    left: 0;
+  }
+}
 .search-item.active{
   display: block;
 }
