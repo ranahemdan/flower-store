@@ -1422,7 +1422,7 @@ section.shopping .fa-chevron-right {
   .services .pic {
     width: 66%;
     position: absolute;
-    bottom: 40px;
+    bottom: 120px;
     opacity: 0.3;
   }
 }
