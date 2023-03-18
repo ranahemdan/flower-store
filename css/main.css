@@ -1960,7 +1960,7 @@ footer .copy-right p span:last-child {
   box-shadow: 0 0 5px #ccc;
   max-width: 80%;
   min-width: 220px;
-  height: 250px;
+  padding-bottom: 20px;
   margin: 20px auto;
   font-weight: 500;
 }
