@@ -110,31 +110,33 @@
   </div>
   <!-- -ALL PRODUCTS IN CART-   -->
 <div class="all-cart-shopping">
-  <div class="contain-cart">
-    <div class="descripion-product">
-      <div class="title">
-        <h3 class="product upper-case">product</h3>
-        <h3 class="quant upper-case">quantity</h3>
-        <h3 class="total upper-case">total</h3>
-        <h3 class="action upper-case">actions</h3>
+  <div class="container">
+    <div class="contain-cart">
+      <div class="descripion-product">
+        <div class="title">
+          <h3 class="product upper-case">product</h3>
+          <h3 class="quant upper-case">quantity</h3>
+          <h3 class="total upper-case">total</h3>
+          <h3 class="action upper-case">actions</h3>
+        </div>
+      </div>
+      <div class="contain-view-cart"></div>
+      <div class="label-cart upper-case"></div>
+      <div class="clear">
+        <button class="capitalize transition" onclick="removeItemFromClearBtn()">clear <i class="fas fa-ban"></i></button>
       </div>
     </div>
-    <div class="contain-view-cart"></div>
-    <div class="label-cart upper-case"></div>
-    <div class="clear">
-      <button class="capitalize transition" onclick="removeItemFromClearBtn()">clear <i class="fas fa-ban"></i></button>
-    </div>
-  </div>
-  <div class="cart-details">
-    <div class="details">
-      <div class="title upper-case">cart details</div>
-      <div class="subtotal">
-        <h6>subtotal:</h6>
-        <div class="price">$0</div>
+    <div class="cart-details">
+      <div class="details">
+        <div class="title upper-case">cart details</div>
+        <div class="subtotal">
+          <h6>subtotal:</h6>
+          <div class="price">$0</div>
+        </div>
+        <button class="transition" onclick="moveToAccount()">check out</button>
       </div>
-      <button class="transition" onclick="moveToAccount()">check out</button>
     </div>
-  </div>
+  </div>  
 </div>
 
     <!-- footer -->
