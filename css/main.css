@@ -1771,15 +1771,17 @@ footer .copy-right p span:last-child {
   z-index: 111;
 }
 /* contain-cart */
-.all-cart-shopping{
+.all-cart-shopping .container{
   overflow: hidden;
-  margin: 10px;
   display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
   gap: 20px;
-  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
 }
 @media(max-width: 991px){
-  .all-cart-shopping{
+  .all-cart-shopping .container{
     display: block;
   }
 }
