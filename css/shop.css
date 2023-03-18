@@ -159,7 +159,7 @@ html {
   }
 }
 .search{
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 .search form{
@@ -315,10 +315,11 @@ html {
 /* plants page */
 /* /////////////////////////// */
 .container-shop{
-  background-color: #f8fff5;
   padding-top: 20px;
 }
-
+.container-shop.container{
+  display: block;
+}
 .container-shop .search input{
   border: 2px solid var(--color-plants);
 }
