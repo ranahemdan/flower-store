@@ -113,28 +113,30 @@
 <!-- SHOPPING HOME -->
   <!--the choose menu of products-->
   <div class="shop-all-products">
-    <div class="choose">
-      <h2 class="main-title">our - categories</h2>
-      <ul class="all-items">
-        <span><li class="itm active" data-name="all">all</li></span>
-        <span><li class="itm" data-name="new">new</li></span>
-        <span><li class="itm" data-name="birthday" id="birth">birthday</li></span>
-        <span><li class="itm" data-name="romance">romance</li></span>
-        <span><li class="itm" data-name="wedding">wedding</li></span>
-        <span><li class="itm" data-name="anniversary">Anniversary</li></span>
-      </ul>
-    </div>
-    <div class="shop-cart">
-      <div class="search">
-        <form action="">
-          <input type="text" name="search" id="search-products" onkeyup="searchProducts()" placeholder="search..."/>
-          <button id="btn-for-search"><i class="fas fa-search"></i></button>
-        </form>
-        <div class="no-result hide">No Results Found !</div>
+    <div class="container">
+      <div class="choose">
+        <h2 class="main-title">our - categories</h2>
+        <ul class="all-items">
+          <span><li class="itm active" data-name="all">all</li></span>
+          <span><li class="itm" data-name="new">new</li></span>
+          <span><li class="itm" data-name="birthday" id="birth">birthday</li></span>
+          <span><li class="itm" data-name="romance">romance</li></span>
+          <span><li class="itm" data-name="wedding">wedding</li></span>
+          <span><li class="itm" data-name="anniversary">Anniversary</li></span>
+        </ul>
       </div>
-      <div class="shop-items" id="shop-items"></div>
-      <button class="see-more transition">see more</button>
-    </div>
+      <div class="shop-cart">
+        <div class="search">
+          <form action="">
+            <input type="text" name="search" id="search-products" onkeyup="searchProducts()" placeholder="search..."/>
+            <button id="btn-for-search"><i class="fas fa-search"></i></button>
+          </form>
+          <div class="no-result hide">No Results Found !</div>
+        </div>
+        <div class="shop-items" id="shop-items"></div>
+        <button class="see-more transition">see more</button>
+      </div>
+    </div>  
   </div>
   <!-- footer -->
   <footer class="capitalize">
