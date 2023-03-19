@@ -123,6 +123,7 @@ body{
 /* related-products */
 .related-item.container{
   display: block;
+  margin-bottom: 30px;
 }
 .related-item .title {
   position: relative;
