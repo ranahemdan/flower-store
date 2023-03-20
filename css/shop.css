@@ -289,7 +289,12 @@ html {
   display: inline-block !important;
 }
 .shop-items .item-product .contain .btn-add-cart {
-  width: 200px;
+  width: 160px;
+}
+@media (max-width: 991px) {
+  .shop-items .item-product .contain .btn-add-cart {
+    width: 200px;
+  }
 }
 .see-more{
   width: 200px;
