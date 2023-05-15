@@ -535,32 +535,32 @@ header .nav2{
   color: var(--main-color);
 }
 
-.nav2 .navigation li {
+.nav2 .navigation > li {
   list-style: none;
   font-weight: 600;
   padding: 10px 0;
 }
 
-.nav2 .navigation li a {
+.nav2 .navigation > li a {
   color: #333;
   transition: var(--transation);
   -webkit-transition: var(--transation);
 }
 
-.nav2 .navigation li a:hover {
+.nav2 .navigation > li a:hover {
   color: var(--main-color);
 }
-.navigation li a i{
+.navigation > li a i{
   display: none;
 }
 @media (max-width: 767px) {
-  .nav2 .navigation li{
+  .nav2 .navigation > li{
     width: 200px;
   }
-  .nav2 .navigation li a{
+  .nav2 .navigation > li a{
     color: var(--white-color);
   }
-  .nav2 .navigation li a i {
+  .nav2 .navigation > li a i {
     display: inline;
     font-size: 18px;
     margin: 0 3px;
