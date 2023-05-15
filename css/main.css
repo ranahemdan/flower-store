@@ -613,24 +613,24 @@ header .nav2{
   display: block;
 }
 
-.navigation .shop .contain h3{
+.navigation .shop .contain li{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   transition: .5s;
   cursor: pointer;
   -webkit-transition: .5s;
 }
-.navigation .shop .contain h3:hover{
+.navigation .shop .contain li:hover{
   color: var(--main-color);
 }
-.navigation .shop .contain h3:first-of-type{
+.navigation .shop .contain li:first-of-type{
   margin: 5px 0 10px 0;
 };
-.navigation .shop .contain h3 a{
+.navigation .shop .contain li a{
   color: #444;
 }
 @media(max-width: 767px){
-  .navigation .shop .contain h3 a{
+  .navigation .shop .contain li a{
     color: #444;
   }
 }
