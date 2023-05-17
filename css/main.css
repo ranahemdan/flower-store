@@ -1606,10 +1606,6 @@ footer .payment {
   margin-left: 6px;
 }
 
-.payment .pay i:hover {
-  color: #bb9bda;
-}
-
 .payment .pay a i {
   font-size: 30px;
   color: var(--white-color);
@@ -1698,6 +1694,7 @@ footer .social a i {
   margin-left: 15px;
   font-size: 20px;
   color: #ddd;
+  transition: .3s;
 }
 
 footer .social a[title="facebook"] i:hover {
